@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 Backend Dev</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Golos Text', sans-serif;
+        background-image: linear-gradient(135deg, rgb(36, 137, 184), beige, rgb(28, 78, 28));
+    }
+
+    a:visited {
+        color: inherit;
+    }
+
+    ul,
+    li {
+        padding: 0;
+        list-style-type: none;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 30px;
+    }
+
+    header {
+        grid-column: span 3;
+        text-align: center;
+        border-bottom: 1px solid gainsboro;
+    }
+
+    nav {
+        padding: 30px;
+        border-right: 1px solid gainsboro;
+    }
+
+
+    article {
+        padding: 30px;
+    }
+
+    article h2 {
+        text-align: center;
+        font-size: 2.0em;
+        max-width: 800px;
+    }
+
+    article img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%
+    }
+
+    article p {
+        margin-top: 30px;
+        line-height: 2.5em;
+        color: #201e1e
+    }
+
+    footer {
+        grid-column: span 3;
+        text-align: center;
+        border-top: 1px solid gainsboro;
+        padding: 30px;
+    }
+
+    aside {
+        padding: 30px;
+        border-left: 1px solid gainsboro;
+    }
+
+    /*responsive media queries*/
+    @media screen and (max-width:1200px) {
+        nav {
+            grid-column: span 3;
+            border-right: 0;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        nav li {
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        nav ul {
+            text-align: center;
+        }
+
+        nav h3 {
+            text-align: center;
+        }
+
+        article {
+            grid-column: span 2;
+        }
+
+        aside {
+            padding: 16px;
+        }
+    }
+
+    @media screen and (max-width:980px) {
+
+        nav,
+        article,
+        aside {
+            grid-column: span 3;
+        }
+
+        aside {
+            border-left: 0;
+            border-top: 1px solid gainsboro;
+        }
+
+        article h2 {
+            font-size: 2.0em;
+        }
+
+        aside li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        aside ul {
+            text-align: center;
+        }
+
+        aside h3 {
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>TuffyTrade</h1>
+        </header>
+        <nav class>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Car parts</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Misc.</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content of page -->
+        <article>
+            <h2>Buy, Sell, Trade with TuffyTrades</h2>
+            <img src="img/secondhand_store.jpg" alt="Thrifted Clothes">
+            <p>
+                Ever wished to buy, sell, trade items with your peers in an easier manner than posting on
+                Reddit/Discord?
+            </p>
+            <p>
+                Well, you can! TuffyTrades allows for the categorization of listed items. No more having to search
+                through discord threads to find that book you've been looking for!
+            </p>
+        </article>
+
+        <aside>
+            <ul>
+                <h3>Useful Links</h3>
+                <li><a href="#">CSUF Discord</a></li>
+                <li><a href="#">CSUF Lost and Found</a></li>
+                <li><a href="#">Report a post</a></li>
+                <li><a href="#">Contact us!</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Copyright 2023, Daniel Cazarez</p>
+            <a href="https://github.com/danielcaz2200" target="_blank">GitHub</a>
+        </footer>
+    </div>
+</body>
+
+</html>
