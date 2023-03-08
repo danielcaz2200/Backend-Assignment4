@@ -9,12 +9,13 @@
 </head>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
     body {
         margin: 0;
-        font-family: 'Golos Text', sans-serif;
-        background-image: linear-gradient(135deg, rgb(36, 137, 184), beige, rgb(28, 78, 28));
+        letter-spacing: 2px;
+        font-family: 'Raleway', sans-serif;
+        background-image: linear-gradient(135deg, rgb(36, 137, 184), rgb(194, 178, 128), rgb(28, 78, 28));
     }
 
     a:visited {
@@ -64,9 +65,20 @@
     }
 
     article p {
+        font-size: 1.25em;
         margin-top: 30px;
         line-height: 2.5em;
         color: #201e1e
+    }
+
+    article .image-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article img {
+        width: 45%;
+        border: 2px solid darkcyan;
     }
 
     footer {
@@ -153,7 +165,7 @@
             <ul>
                 <li><a href="#">Clothing</a></li>
                 <li><a href="#">Books</a></li>
-                <li><a href="#">Car parts</a></li>
+                <li><a href="#">Car Parts</a></li>
                 <li><a href="#">Electronics</a></li>
                 <li><a href="#">Misc.</a></li>
             </ul>
@@ -162,7 +174,10 @@
         <!-- Main content of page -->
         <article>
             <h2>Buy, Sell, Trade with TuffyTrades</h2>
-            <img src="img/secondhand_store.jpg" alt="Thrifted Clothes">
+            <div class="image-container">
+                <img src="img/secondhand_store.jpg" alt="Thrifted Clothes">
+                <img src="img/garagesale.jpg" alt="Garage Sale">
+            </div>
             <p>
                 Ever wished to buy, sell, trade items with your peers in an easier manner than posting on
                 Reddit/Discord?
@@ -176,7 +191,7 @@
         <aside>
             <ul>
                 <h3>Useful Links</h3>
-                <li><a href="#">CSUF Discord</a></li>
+                <li><a href=" #">CSUF Discord</a></li>
                 <li><a href="#">CSUF Lost and Found</a></li>
                 <li><a href="#">Report a post</a></li>
                 <li><a href="#">Contact us!</a></li>
